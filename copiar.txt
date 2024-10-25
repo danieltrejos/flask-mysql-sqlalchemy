@@ -1,0 +1,4 @@
+<li><a href="{{ url_for('libros.lista_libros') }}">Libros</a></li>
+<li><a href="{{ url_for('prestamos.lista_prestamos') }}">Préstamos</a></li>
+
+base2.html debajo del enlace a usuarios

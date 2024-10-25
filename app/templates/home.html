@@ -1,0 +1,20 @@
+<!-- Esta plantilla extiende de la plantilla base -->
+{% extends 'base.html' %}
+
+<!-- Inyeccion del titulo -->
+{% block title %} Pagina de inicio - App Flask - Con plantilla y Blueprint {% endblock %}
+
+{% block content %}
+<h1>Pagina de inicio de la Aplicacion</h1>
+<p>Esta es la pagina de inicio de la aplicacion Flask con una plantilla y un blueprint.</p>
+<h2>ToDO</h2>
+<ol>
+    <li>Configurar entorno virtual para el proyecto</li>
+    <li>Instalar dependencias requeridas con pip </li>
+    <li>Configurar la estructura del proyecto crear sistema de carpetas y archivos</li>
+    <li>Configurar archivos de inicio run.py, ./app/__init__.py, config.py, routes.py</li>
+    <li>Configurar rutas, blueprints y plantilla base.html, plantillas</li>
+    <li>Registra cada plantilla en routes.py y el blueprint de la ruta en el __init__</li>
+</ol>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} My App Title {% endblock %}</title>
+</head>
+<ma>
+    <header>
+        <h1>Welcome to Flask App</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('main.home') }}">Inicio</a></li>
+                <li><a href="{{ url_for('main.about')}}">Acerca del proyecto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        <!-- Contenido inyectado de la plantilla -->
+        {% endblock %}
+    </main>
+    <footer>
+
+    </footer>
+    </body>
+
+</html>
